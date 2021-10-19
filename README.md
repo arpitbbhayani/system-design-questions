@@ -1,4 +1,3 @@
-
 System Design Assignments
 ===
 
@@ -14,6 +13,12 @@ This is a prime and intermediate-level cohort-based course aimed at providing an
 
 The program will have a blend of _Live Classes happening on Weekends 4 to 6:30 pm IST_, _1:1 Mentorship sessions happening on weekdays_, and _assignments_. The program is designed to be intense and crisp to accelerate learning.
 
+
+## Highlights
+
+ - The course has been taken up by __200+__ people, spanning __7__ countries.
+ - The NPS of the course is __86__.
+ - People from companies like Tesla, Amazon, Microsoft, Google, Yelp, Github, Flipkart, Practo, Grab, PayPal, and many more, have taken up this course.
 
 
 ## Hi, I'm Arpit Bhayani 👋
@@ -36,3 +41,6 @@ Recently, I have started building [Revine](https://revine.arpitbhayani.me) - a p
 </a>
 </center>
 
+# Assignments
+
+ - [Design Load Balancer](load-balancer.md)
