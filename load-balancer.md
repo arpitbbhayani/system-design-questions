@@ -17,23 +17,24 @@ To gain a deeper understanding of how Load Balancer is actually implemented, try
  - ability to change the load balancing strategy on the fly
  - ability to visualize the load balancing in action
 
-## What should be your output?
-
- - a high level design documentation explaining the design and decisions
- - a binary that runs the load balancer
-
-##  Recommended Tech Stack
+###  Recommended Tech Stack
 
 This is a recommended tech-stack that will help you building your Load Balancer effetively
 
 - Language: Golang, Java, C++, or any language that supports multi-threading
 - OS: *nix - Ubuntu, Mac
 
-##  Keep in mind
+###  Keep in mind
 
 These are the common pitfalls that you should keep in mind while you are building this Load Balancer
 
 - System calls are blocking
+
+## What should be your output?
+
+ - a high level design documentation explaining the design and decisions
+ - a binary that runs the load balancer
+
 
 ##  You'll learn
 
@@ -49,4 +50,3 @@ If you find this assignment helpful, please
  - share this assignment with your friends and peers
  - star this repository and help it reach a wider audience
  - give me a shoutout on Twitter [@arpit_bhayani](https://twitter.com/@arpit_bhayani), or on LinkedIn at [@arpitbhayani](https://www.linkedin.com/in/arpitbhayani/).
-
