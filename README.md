@@ -6,7 +6,7 @@ The repository contains a set of problem statements around Software Architecture
 
 # Assignments
 
- - [Design a simple Load Balancer](load-balancer.md)
+ - [Design a Load Balancer](load-balancer.md)
 
 
 # Arpit's System Design Masterclass

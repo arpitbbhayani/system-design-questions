@@ -1,6 +1,17 @@
 Design a Load Balancer
 ===
 
+<!--ts-->
+* [Design a Load Balancer](#design-a-load-balancer)
+   * [High Level Requirements](#high-level-requirements)
+   * [Implementation Requirements](#implementation-requirements)
+      * [Recommended Tech Stack](#recommended-tech-stack)
+      * [Keep in mind](#keep-in-mind)
+   * [What should be your output?](#what-should-be-your-output)
+   * [You'll learn](#youll-learn)
+   * [Share it with your peers](#share-it-with-your-peers)
+<!--te-->
+
 Design a load balancer that acts as a [Reverse Proxy](https://en.wikipedia.org/wiki/Reverse_proxy) and balances the load across multiple configured backend servers.
 
 ## High Level Requirements
