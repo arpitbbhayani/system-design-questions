@@ -10,7 +10,7 @@ Design a Load Balancer
    * [Design Document](#design-document)
    * [Prototype](#prototype)
       * [Recommended Tech Stack](#recommended-tech-stack)
-   * [Keep in mind](#keep-in-mind)
+      * [Keep in mind](#keep-in-mind)
 * [Outcome](#outcome)
    * [You'll learn](#youll-learn)
 * [Share and shoutout](#share-and-shoutout)
