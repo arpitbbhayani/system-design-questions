@@ -5,6 +5,7 @@ Design a Load Balancer
 * [Design a Load Balancer](#design-a-load-balancer)
 * [Problem Statement](#problem-statement)
 * [Requirements](#requirements)
+   * [Core Requirements](#core-requirements)
    * [High Level Requirements](#high-level-requirements)
    * [Micro Requirements](#micro-requirements)
 * [Output](#output)
@@ -25,17 +26,23 @@ Design a load balancer that acts as a [Reverse Proxy](https://en.wikipedia.org/w
 
 # Requirements
 
- - ability to add or remove backend servers at will (UI preferable)
- - ability to change the load balancing strategy on the fly
- - ability to visualize the load balancing in action
+The core requirements of a load balancer would be to have an
+
+## Core Requirements
+
+ - ability to accept incoming TCP connection and forward it to one of the configured backend server
+ - ability to add and remove backend servers at will
+ - ability to monitor healthy backend servers
+ - ability to have a configurable load balancing strategy
+ - ability to measure and monitor load balancer metrics
 
 ##  High Level Requirements
 <!--hs-->
 - make your high-level components operate with **high availability**
-- ensure that the data in your system is **durable**, not matter what happens
-- define how your system would behave while **scaling-up** and **scaling-down**
-- make your system **cost-effective** and provide a justification for the same
-- describe how **capacity planning** helped you made a good design decision
+ - ensure that the data in your system is **durable**, not matter what happens
+ - define how your system would behave while **scaling-up** and **scaling-down**
+ - make your system **cost-effective** and provide a justification for the same
+ - describe how **capacity planning** helped you made a good design decision
 <!--he-->
 
 ##  Micro Requirements
@@ -49,19 +56,21 @@ Design a load balancer that acts as a [Reverse Proxy](https://en.wikipedia.org/w
 
 ## Design Document
 <!--ds-->
-Create a design document of this system/feature stating all critical design decisions, tradeoffs, components, services, and communications. Also specify how your system handles at scale, and what will eventually become a chokepoint.
+Create a **design document** of this system/feature stating all critical design decisions, tradeoffs, components, services, and communications. Also specify how your system handles at scale, and what will eventually become a chokepoint.
 
 Do **not** create unnecessary components, just to make design look complicated. A good design is **always simple and elegant**. A good way to think about it is if you were to create a spearate process/machine/infra for each component and you will have to code it yourself, would you still do it?
 <!--de-->
 
 ## Prototype
 
-To understand the micro-nuances of this system, build a prototype, that need not work at scale, with
+To understand the nuances and internals of a Load Balancer, build a prototype that
 
-- an interface that mimics online and offline users
-- create a demonstration that updates the status when user goes online/offline
-
-The aim of building the prototype is to understand the micro-nuances of building a system like this.
+- is a working load balancer
+- has an interface to
+   - add and remove backend servers
+   - see which of the configured backend servers are healthy
+   - visualize load balancer metrics
+   - change load balancing strategy on the fly
 
 ###  Recommended Tech Stack
 
@@ -80,8 +89,6 @@ These are the common pitfalls that you should keep in mind while you are buildin
 # Outcome
 
 ##  You'll learn
-
-These will be your key learnings after you finish building your Load Balancer
 
 - System Calls
 - Internals of Load Balancer

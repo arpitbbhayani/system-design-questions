@@ -33,10 +33,10 @@ In this assignment, let's design a system that indicates who all are online at t
 
 <!--hs-->
 - make your high-level components operate with **high availability**
-- ensure that the data in your system is **durable**, not matter what happens
-- define how your system would behave while **scaling-up** and **scaling-down**
-- make your system **cost-effective** and provide a justification for the same
-- describe how **capacity planning** helped you made a good design decision
+ - ensure that the data in your system is **durable**, not matter what happens
+ - define how your system would behave while **scaling-up** and **scaling-down**
+ - make your system **cost-effective** and provide a justification for the same
+ - describe how **capacity planning** helped you made a good design decision
 <!--he-->
 
 ##  Micro Requirements
@@ -50,7 +50,7 @@ In this assignment, let's design a system that indicates who all are online at t
 
 ## Design Document
 <!--ds-->
-Create a design document of this system/feature stating all critical design decisions, tradeoffs, components, services, and communications. Also specify how your system handles at scale, and what will eventually become a chokepoint.
+Create a **design document** of this system/feature stating all critical design decisions, tradeoffs, components, services, and communications. Also specify how your system handles at scale, and what will eventually become a chokepoint.
 
 Do **not** create unnecessary components, just to make design look complicated. A good design is **always simple and elegant**. A good way to think about it is if you were to create a spearate process/machine/infra for each component and you will have to code it yourself, would you still do it?
 <!--de-->
@@ -68,7 +68,7 @@ The aim of building the prototype is to understand the micro-nuances of building
 
 This is a recommended tech-stack that will help you building the prototype is
 
-|Which|What|
+|||
 |-----|-----|
 |Language|NodeJS|
 |Library|SocketIO|
