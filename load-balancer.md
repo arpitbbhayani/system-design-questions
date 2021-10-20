@@ -67,8 +67,9 @@ The aim of building the prototype is to understand the micro-nuances of building
 
 This is a recommended tech-stack that will help you building your Load Balancer effetively
 
-- Language: Golang, Java, C++, or any language that supports multi-threading
-- OS: *nix - Ubuntu, Mac
+|||
+|-----|-----|
+|Language|Multi-threaded language like Golang, Java, C++|
 
 ###  Keep in mind
 
