@@ -1,5 +1,3 @@
-##  High Level Requirements
-
 - make your high-level components operate with **high availability**
 - ensure that the data in your system is **durable**, not matter what happens
 - define how your system would behave while **scaling-up** and **scaling-down**

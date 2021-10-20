@@ -1,4 +1,4 @@
-##  Share and shoutout
+#  Share and shoutout
 
 If you find this assignment helpful, please
  - share this assignment with your friends and peers

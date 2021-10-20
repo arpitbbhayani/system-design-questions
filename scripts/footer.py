@@ -17,7 +17,7 @@ patterns = [
 ]
 
 for pattern in patterns:
-  footer = "\n" + readfile(pattern[2]) + "\n"
+  footer = "\n" + readfile(pattern[2]).strip() + "\n"
   content = readfile(sys.argv[1]).strip()
   content = re.sub(pattern[0] + '?(.*?)' + pattern[1], pattern[0] + footer + pattern[1], content, flags=re.DOTALL)
   writefile(sys.argv[1], content)
