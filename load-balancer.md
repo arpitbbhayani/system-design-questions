@@ -21,6 +21,8 @@ Design a Load Balancer
 
 Design a load balancer that acts as a [Reverse Proxy](https://en.wikipedia.org/wiki/Reverse_proxy) and balances the load across multiple configured backend servers.
 
+![Design Load Balancer](https://user-images.githubusercontent.com/4745789/138110826-1490cac9-5a02-43bd-bb14-74334742dd16.png)
+
 # Requirements
 
  - ability to add or remove backend servers at will (UI preferable)
