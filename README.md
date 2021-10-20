@@ -7,6 +7,7 @@ The repository contains a set of problem statements around Software Architecture
 # Assignments
 
  - [Design a Load Balancer](load-balancer.md)
+ - [Design Realtime Claps](realtime-claps.md)
 
 
 # Arpit's System Design Masterclass
