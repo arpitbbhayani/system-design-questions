@@ -74,7 +74,7 @@ This is a recommended tech-stack that will help you building the prototype is
 |Library|SocketIO|
 |Database|MySQL or MongoDB|
 
-##  Keep in mind
+###  Keep in mind
 
 These are a set of common pitfalls that you should keep in mind while you are building this
 

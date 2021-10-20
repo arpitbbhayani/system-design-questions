@@ -65,7 +65,7 @@ This is a recommended tech-stack that will help you building your Load Balancer 
 - Language: Golang, Java, C++, or any language that supports multi-threading
 - OS: *nix - Ubuntu, Mac
 
-##  Keep in mind
+###  Keep in mind
 
 These are the common pitfalls that you should keep in mind while you are building this Load Balancer
 
