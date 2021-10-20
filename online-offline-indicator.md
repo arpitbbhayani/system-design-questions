@@ -1,8 +1,8 @@
-Design a Load Balancer
+Design Online Offline Indicator
 ===
 
 <!--ts-->
-* [Design a Load Balancer](#design-a-load-balancer)
+* [Design Online Offline Indicator](#design-online-offline-indicator)
 * [Requirements](#requirements)
    * [High Level Requirements](#high-level-requirements)
    * [Micro Requirements](#micro-requirements)
@@ -15,13 +15,17 @@ Design a Load Balancer
    * [Share and shoutout](#share-and-shoutout)
 <!--te-->
 
-Design a load balancer that acts as a [Reverse Proxy](https://en.wikipedia.org/wiki/Reverse_proxy) and balances the load across multiple configured backend servers.
+Imagine you are building a chat application in which a user can chat with any other user, provided they are both connected. For a user to initiate the chat, it is always helpful if we show who all are online.
 
+In this assignment, let's design a system that indicates who all are online at the moment. The micro-problem statement is as simple as answering the question - Given a user, return if he/she is online or not.
+
+![Designing Online Offline Indicator](https://user-images.githubusercontent.com/4745789/138017480-1f7c30ce-50f2-4a50-99b5-1cf7f0778caa.png)
 # Requirements
 
- - ability to add or remove backend servers at will (UI preferable)
- - ability to change the load balancing strategy on the fly
- - ability to visualize the load balancing in action
+ - should scale for **5 million** active users at any given moment
+ - should update online status of a user within **10 seconds** of user coming online
+ - can be **lineant** in marking a user offline
+ - a user should see accurate status of any other user, **eventually**
 
 <!--hs-->
 ##  High Level Requirements
@@ -56,27 +60,34 @@ Do **not** create unnecessary components, just to make design look complicated. 
 
 ## Prototype
 
+To understand the micro-nuances of this system, build a prototype, that need not work at scale, with
+
+- an interface that mimics online and offline users
+- create a demonstration that updates the status when user goes online/offline
+
+The aim of building the prototype is to understand the micro-nuances of building a system like this.
+
 ###  Recommended Tech Stack
 
-This is a recommended tech-stack that will help you building your Load Balancer effetively
+This is a recommended tech-stack that will help you building the prototype is
 
-- Language: Golang, Java, C++, or any language that supports multi-threading
-- OS: *nix - Ubuntu, Mac
+|Which|What|
+|-----|-----|
+|Language|NodeJS|
+|Library|SocketIO|
+|Database|MySQL or MongoDB|
 
 ##  Keep in mind
 
-These are the common pitfalls that you should keep in mind while you are building this Load Balancer
+These are a set of common pitfalls that you should keep in mind while you are building this
 
-- System calls are blocking
-
+- If you are using NodeJS, remember, IO is asynchronous
+- if you are broadcasting the status update, do not do it to all the users  
 
 ##  You'll learn
 
-These will be your key learnings after you finish building your Load Balancer
-
-- System Calls
-- Internals of Load Balancer
-- Concurrent Execution using Multi-threading
+- building realtime user experiences using SocketIO
+- designing database schema
 
 <!--fs-->
 ##  Share and shoutout

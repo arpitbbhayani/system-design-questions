@@ -9,7 +9,15 @@ def writefile(fname, content):
   with open(fname, "w") as f: return f.write(content)
 
 
-footer = readfile("./scripts/footer.md")
-content = "\n" + readfile(sys.argv[1]) + "\n"
-content = re.sub('<!--fs-->?(.*?)<!--fe-->', '<!--fs-->' + footer + '<!--fe-->', content, flags=re.DOTALL)
-writefile(sys.argv[1], content)
+patterns = [
+  ('<!--fs-->', '<!--fe-->', './scripts/footer.md'),
+  ('<!--hs-->', '<!--he-->', './scripts/high-level-requirements.md'),
+  ('<!--ms-->', '<!--me-->', './scripts/micro-requirements.md'),
+  ('<!--ds-->', '<!--de-->', './scripts/dd.md'),
+]
+
+for pattern in patterns:
+  footer = "\n" + readfile(pattern[2]) + "\n"
+  content = readfile(sys.argv[1]).strip()
+  content = re.sub(pattern[0] + '?(.*?)' + pattern[1], pattern[0] + footer + pattern[1], content, flags=re.DOTALL)
+  writefile(sys.argv[1], content)

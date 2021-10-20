@@ -1,0 +1,7 @@
+##  High Level Requirements
+
+- make your high-level components operate with **high availability**
+- ensure that the data in your system is **durable**, not matter what happens
+- define how your system would behave while **scaling-up** and **scaling-down**
+- make your system **cost-effective** and provide a justification for the same
+- describe how **capacity planning** helped you made a good design decision 
