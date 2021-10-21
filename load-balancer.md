@@ -26,8 +26,6 @@ Design a load balancer that acts as a [Reverse Proxy](https://en.wikipedia.org/w
 
 # Requirements
 
-The core requirements of a load balancer would be to have an
-
 ## Core Requirements
 
  - ability to accept incoming TCP connection and forward it to one of the configured backend server
@@ -71,12 +69,13 @@ To understand the nuances and internals of a Load Balancer, build a prototype th
    - see which of the configured backend servers are healthy
    - visualize load balancer metrics
    - change load balancing strategy on the fly
+   - changes should not require a reboot to take effect
 
 ###  Recommended Tech Stack
 
 This is a recommended tech-stack that will help you building your Load Balancer effetively
 
-|||
+|Which|Options|
 |-----|-----|
 |Language|Multi-threaded language like Golang, Java, C++|
 
