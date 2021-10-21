@@ -33,7 +33,7 @@ Representative image goes here.
 
 ## Prototype
 
-Build a prototype that
+To understand the nuances and internals of this system, build a prototype that
 
 - prototype requirement 1
 - prototype requirement 2
@@ -41,7 +41,7 @@ Build a prototype that
 
 ###  Recommended Tech Stack
 
-This is a recommended tech-stack 
+This is a recommended tech-stack for building this prototype
 
 |Which|Options|
 |-----|-----|
@@ -51,7 +51,9 @@ This is a recommended tech-stack
 
 These are the common pitfalls that you should keep in mind while you are building this prototype
 
-- System calls are blocking
+- pitfall-1
+- pitfall-2
+- pitfall-3
 
 # Outcome
 

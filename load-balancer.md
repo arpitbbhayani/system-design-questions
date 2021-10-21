@@ -61,7 +61,7 @@ Do **not** create unnecessary components, just to make design look complicated. 
 
 ## Prototype
 
-To understand the nuances and internals of a Load Balancer, build a prototype that
+To understand the nuances and internals of this system, build a prototype that
 
 - is a working load balancer
 - has an interface to

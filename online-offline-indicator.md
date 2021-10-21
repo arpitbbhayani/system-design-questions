@@ -3,7 +3,9 @@ Design Online Offline Indicator
 
 <!--ts-->
 * [Design Online Offline Indicator](#design-online-offline-indicator)
+* [Problem Statement](#problem-statement)
 * [Requirements](#requirements)
+   * [Core Requirements](#core-requirements)
    * [High Level Requirements](#high-level-requirements)
    * [Micro Requirements](#micro-requirements)
 * [Output](#output)
@@ -16,6 +18,8 @@ Design Online Offline Indicator
 * [Share and shoutout](#share-and-shoutout)
 <!--te-->
 
+# Problem Statement
+
 Imagine you are building a chat application in which a user can chat with any other user, provided they are both connected. For a user to initiate the chat, it is always helpful if we show who all are online.
 
 In this assignment, let's design a system that indicates who all are online at the moment. The micro-problem statement is as simple as answering the question - Given a user, return if he/she is online or not.
@@ -24,13 +28,15 @@ In this assignment, let's design a system that indicates who all are online at t
 
 # Requirements
 
- - should scale for **5 million** active users at any given moment
+## Core Requirements
+
  - should update online status of a user within **10 seconds** of user coming online
  - can be **lineant** in marking a user offline
+ - should scale for **5 million** active users at any given moment
  - a user should see accurate status of any other user, **eventually**
 
-##  High Level Requirements
 
+##  High Level Requirements
 <!--hs-->
 - make your high-level components operate with **high availability**
  - ensure that the data in your system is **durable**, not matter what happens
@@ -57,36 +63,39 @@ Do **not** create unnecessary components, just to make design look complicated. 
 
 ## Prototype
 
-To understand the micro-nuances of this system, build a prototype, that need not work at scale, with
+To understand the nuances and internals of this system, build a prototype that
 
-- an interface that mimics online and offline users
-- create a demonstration that updates the status when user goes online/offline
-
-The aim of building the prototype is to understand the micro-nuances of building a system like this.
+- shows a list of users
+- shows if a particular user is online or offline
+- the user list is grouped such that the online users are shown first and then the offline ones
+- if the user is offline, also show "was online X mins ago"
 
 ###  Recommended Tech Stack
 
-This is a recommended tech-stack that will help you building the prototype is
+This is a recommended tech-stack for building this prototype
 
-|||
+|Which|Options|
 |-----|-----|
-|Language|NodeJS|
-|Library|SocketIO|
-|Database|MySQL or MongoDB|
+|Language|NodeJS, or any language that supports SocketIO|
+|Database|MySQL, MongoDB, or any one that you like|
+|Framework|SocketIO, for realtime status update|
 
 ###  Keep in mind
 
-These are a set of common pitfalls that you should keep in mind while you are building this
+These are the common pitfalls that you should keep in mind while you are building this prototype
 
-- If you are using NodeJS, remember, IO is asynchronous
-- if you are broadcasting the status update, do not do it to all the users  
+- IO calls in NodeJS are asynchronous
+- if you are broadcasting the status update, do not do it to "all" the users  
+
 
 # Outcome
 
 ##  You'll learn
 
+- identify when a user is "online"
+- finding when a user goes "offline"
+- database schema design and deciding what data to store to make this efficient
 - building realtime user experiences using SocketIO
-- designing database schema
 
 <!--fs-->
 #  Share and shoutout
