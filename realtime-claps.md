@@ -1,17 +1,24 @@
-Design Realtime Claps
+Design something awesome
 ===
 
 <!--ts-->
-* [Design Realtime Claps](#design-realtime-claps)
-      * [Similar feature at Twitter](#similar-feature-at-twitter)
+* [Design something awesome](#design-something-awesome)
+* [Problem Statement](#problem-statement)
+* [Requirements](#requirements)
+   * [Core Requirements](#core-requirements)
    * [High Level Requirements](#high-level-requirements)
-   * [Implementation Requirements](#implementation-requirements)
+   * [Micro Requirements](#micro-requirements)
+* [Output](#output)
+   * [Design Document](#design-document)
+   * [Prototype](#prototype)
       * [Recommended Tech Stack](#recommended-tech-stack)
       * [Keep in mind](#keep-in-mind)
-   * [What should be your output?](#what-should-be-your-output)
+* [Outcome](#outcome)
    * [You'll learn](#youll-learn)
 * [Share and shoutout](#share-and-shoutout)
 <!--te-->
+
+# Problem Statement
 
 Imagine you have a publishing platform where writers write articles and readers read them. To appreciate the quality content, the readers _clap_ for the article by clicking the clap button present next to the article.
 
@@ -20,51 +27,74 @@ The clap button looks as shown above and the number `156` beneath it is the tota
 
 Design a realtime gratification system, that updates the _clap_ count as soon as someone clapped for the article; which means all the users who are reading the same article at the same time should, in realtime, see that someone else clapped for the article.
 
-### Similar feature at Twitter
+# Requirements
 
-A similar behaviour is oobserved on Twitter, where it updates the _likes_ and the _retweets_ count in near-realtime.
+## Core Requirements
+
+ - multiple readers reading the same article
+ - when one reader _claps_ an article, other readers get an realtime update
+ - the clap count on an article to update in realtime
+ - **100,000** concurrent users on the platform
+ - **10,000** concurrent users reading the same article (at peak)
 
 ##  High Level Requirements
+<!--hs-->
+- make your high-level components operate with **high availability**
+ - ensure that the data in your system is **durable**, not matter what happens
+ - define how your system would behave while **scaling-up** and **scaling-down**
+ - make your system **cost-effective** and provide a justification for the same
+ - describe how **capacity planning** helped you made a good design decision
+<!--he-->
 
-- decide different modules and components required to facilitate this feature
-- make your service, database, and other components operate with High Availability
-- define a failover strategy if one of your stateful component goes down
-- define scaling strategy for each of your component
+##  Micro Requirements
+<!--ms-->
+- ensure the data in your system is **never** going in an inconsistent state
+ - ensure your system is **free of deadlocks** (if applicable)
+ - ensure that the throughput of your system is not affected by **locking**, if it does, state how it would affect
+<!--me-->
 
-##  Implementation Requirements
+# Output
 
-To gain a deeper understanding of realtime communication try to build this feature locally by simulating the platform and users. Locally, you should have  
+## Design Document
+<!--ds-->
+Create a **design document** of this system/feature stating all critical design decisions, tradeoffs, components, services, and communications. Also specify how your system handles at scale, and what will eventually become a chokepoint.
 
-- an interface to view articles and clap them
-- ability to simulate or act as multiple users using this platform
-- the clap counts updating in realtime when one user clicks the button
+Do **not** create unnecessary components, just to make design look complicated. A good design is **always simple and elegant**. A good way to think about it is if you were to create a spearate process/machine/infra for each component and you will have to code it yourself, would you still do it?
+<!--de-->
+
+## Prototype
+
+To understand the nuances and internals of this system, build a prototype that
+
+- build an interface allowing multiple readers read an article
+- place a button and a clap counter next to the article's body
+- when one user clicks the clap button, the count updates in the database
+- the event is then sent to all the readers reading the same article
 
 ###  Recommended Tech Stack
 
-This is a recommended tech-stack that will help you building a prototype of this feature to understand the nuances of building anything realtime.
+This is a recommended tech-stack for building this prototype
 
-- Language: NodeJS
-- Library: SocketIO
-- Database: MySQL, MongoDB, depending on your consistency guarantees
-- OS: *nix - Ubuntu, Mac
+|Which|Options|
+|-----|-----|
+|Language|NodeJS, any other that supports socket IO|
+|Database|MongoDB, MySQL, any of your liking|
+|Library|SocketIO|
 
 ###  Keep in mind
 
-These are the common pitfalls that you should keep in mind while you are building this
+These are the common pitfalls that you should keep in mind while you are building this prototype
 
-- If you are using NodeJS, remember, IO is asynchronous
-- Only the users that are reading the same article at the same time should be notified, not all
+- IO calls in NodeJS are asynchronous
+- if you are broadcasting the status update, do not do it to "all" the users  
 
-##  What should be your output?
-
-- a high level design documentation explaining the design and decisions
-- a running web application to see realtime claps in action
+# Outcome
 
 ##  You'll learn
 
- - building realtime user experiences using SocketIO
- - designing databases with different consistency guarantees
- - scaling stateful components
+- realtime communication through SocketIO
+- database schema design and deciding what data to store to make this efficient
+- optimizing by batching
 
 <!--fs-->
 #  Share and shoutout

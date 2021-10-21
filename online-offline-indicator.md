@@ -78,7 +78,7 @@ This is a recommended tech-stack for building this prototype
 |-----|-----|
 |Language|NodeJS, or any language that supports SocketIO|
 |Database|MySQL, MongoDB, or any one that you like|
-|Framework|SocketIO, for realtime status update|
+|Library|SocketIO, for realtime status update|
 
 ###  Keep in mind
 
