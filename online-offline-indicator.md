@@ -2,7 +2,7 @@ Design an Online Offline Indicator
 ===
 
 <!--ts-->
-* [Design Online Offline Indicator](#design-online-offline-indicator)
+* [Design an Online Offline Indicator](#design-an-online-offline-indicator)
 * [Problem Statement](#problem-statement)
 * [Requirements](#requirements)
    * [Core Requirements](#core-requirements)
