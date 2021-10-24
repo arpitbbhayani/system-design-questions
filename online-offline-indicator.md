@@ -1,4 +1,4 @@
-Design Online Offline Indicator
+Design an Online Offline Indicator
 ===
 
 <!--ts-->
