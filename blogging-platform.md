@@ -1,4 +1,4 @@
-Design Blogging Platform
+Design a Blogging Platform
 ===
 
 <!--ts-->
