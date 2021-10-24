@@ -26,12 +26,16 @@ Design a simple multi-user publishing/blogging platform, allowing writers to pub
 
 ## Core Requirements
 
- - writers should be able to publish blog under their personal publication
- - readers should be able to read the blog
+ - writers should be able to **publish** blog under their personal publication
+ - readers should be able to **read** the blog
  - a user can be both - a reader as well as a writer
- - author of the blog should be able to delete the blog
- - blog may contain images, but will not contain any video
- - time to access the blog should be as low as possible
+ - author of the blog should be able to **delete** the blog
+ - blog may **contain images**, but will not contain any video
+ - time to access the blog should be **as low as possible**
+ - we have to render "**number of blogs**" written by every user on his/her profile
+ - users should be able to **search** for a particular blog
+ - the platform should be scaled for **5 million** daily active readers
+ - the platform should be scaled for **10,000** daily active writers
 
 ##  High Level Requirements
 <!--hs-->
@@ -66,7 +70,9 @@ To understand the nuances and internals of this system, build a prototype that
 - has an interface for writers to
    - publish the blog
    - manage the blog
-- has an interface for readers to browse all the publications and read the blogs
+- has an interface for readers to
+   - browse all the publications and read the blogs
+   - search a blog or a publication
 
 ###  Recommended Tech Stack
 
