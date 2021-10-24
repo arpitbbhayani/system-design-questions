@@ -2,7 +2,7 @@ Design a Blogging Platform
 ===
 
 <!--ts-->
-* [Design Blogging Platform](#design-blogging-platform)
+* [Design a Blogging Platform](#design-a-blogging-platform)
 * [Problem Statement](#problem-statement)
 * [Requirements](#requirements)
    * [Core Requirements](#core-requirements)
