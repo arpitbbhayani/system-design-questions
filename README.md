@@ -6,6 +6,7 @@ The repository contains a set of problem statements around Software Architecture
 
 # Assignments
 
+ - [Design a Blogging Platform](blogging-platform.md)
  - [Design Online Offline Indicator](online-offline-indicator.md)
  - [Design Realtime Claps](realtime-claps.md)
  - [Design a Load Balancer](load-balancer.md)
