@@ -20,15 +20,18 @@ Design Airline Check-in System
 
 # Problem Statement
 
+When you book your tickets with an airline you are required to complete the payment and confirm your reservation. Once the reservation is complete then you can either optionally do a web check-in and confirm your seats or just before your departure do a physical check-in at the airport.
 
+In this problem statement, let's design this web-check in system, where the passenger logs in to the system with the PNR, performs the seat selection and the gets the boarding pass. If the passenger tries to book a seat, already booked and assigned to the other passenger show an error message requesting passenger to re-select the seats.
 
 # Requirements
 
 ## Core Requirements
 
- - **one seat** should be booked by only **one user**
- - we should **allow multiple users to book** seats in parallel
- - seats to be made **unavailable** when a user is making the payment
+ - **one seat** can be assigned to only one passenger and once assigned the seat cannot be transferred
+ - assume all **100 people** boarding the plane are trying to make a selection of their seat at the same time
+ - the check-in should be as **fast** as possible
+ - when one passenger is booking a seat it should **not** lead to other passengers waiting
 
 ##  High Level Requirements
 <!--hs-->
@@ -59,11 +62,13 @@ Do **not** create unnecessary components, just to make design look complicated. 
 
 To understand the nuances and internals of this system, build a prototype that
 
-- design a database schema for the ticket booking system
-- build a simple user interface allowing users to book tickets
-- simulate multiple users trying to book the same seats
-- you can create a mock payment service simulating the payment being made by a user
-- mock payment failure rate of 1%, which means 1 in 100 payment is fails
+- design a database schema for the airline check-in system
+- build a simple interface allowing passenger to
+   - view available seats
+   - view unavailable seats
+   - select a seat of their liking
+   - upon successful booking, print their boarding pass
+- simulate multiple passengers trying to book the same seats and handle the concurrency
 
 ###  Recommended Tech Stack
 
@@ -73,14 +78,12 @@ This is a recommended tech-stack for building this prototype
 |-----|-----|
 |Language|Golang, Java, C++|
 |Database|Relational Database - MySQL, PostgreSQL|
-|Remote Locking|Redis|
 
 ###  Keep in mind
 
 These are the common pitfalls that you should keep in mind while you are building this prototype
 
-- in a distributed system, everything could and would fail
-- a seat that is not booked by a user, should not be perpetually blocked
+- have a primary key to your tables otherwise the entire table might get locked
 
 # Outcome
 
@@ -88,7 +91,6 @@ These are the common pitfalls that you should keep in mind while you are buildin
 
 - database locking
 - database schema design
-- remote locking
 
 <!--fs-->
 #  Share and shoutout
