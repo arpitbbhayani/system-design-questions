@@ -24,6 +24,8 @@ When you book your tickets with an airline you are required to complete the paym
 
 In this problem statement, let's design this web-check in system, where the passenger logs in to the system with the PNR, performs the seat selection and the gets the boarding pass. If the passenger tries to book a seat, already booked and assigned to the other passenger show an error message requesting passenger to re-select the seats.
 
+![Relog Airline Check-in System](https://user-images.githubusercontent.com/4745789/138721841-3fc02879-7075-491a-9dcf-74011dba11e6.png)
+
 # Requirements
 
 ## Core Requirements
