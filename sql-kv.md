@@ -28,8 +28,10 @@ Design a KV Store built on top of a SQL (relational) database. The store exposes
 
 ## Core Requirements
 
- - core requirement 1
- - core requirement 2
+ - should be able to `GET`, `PUT`, `DEL`, `TTL` on keys
+ - upon expiration the key should be auto-deleted
+ - should handle **1 million** concurrent transactions
+ - max storage of one KV store would be **5000 TB**
 
 ##  High Level Requirements
 <!--hs-->
@@ -60,9 +62,8 @@ Do **not** create unnecessary components, just to make design look complicated. 
 
 To understand the nuances and internals of this system, build a prototype that
 
-- prototype requirement 1
-- prototype requirement 2
-- prototype requirement 3
+- expose `GET`, `PUT`, `DEL`, `TTL` over HTTP server
+- simulate concurrent transactions and measure the throughput
 
 ###  Recommended Tech Stack
 
@@ -71,22 +72,22 @@ This is a recommended tech-stack for building this prototype
 |Which|Options|
 |-----|-----|
 |Language|Golang, Java, C++|
+|Database|Relational Database - MySQL|
 
 ###  Keep in mind
 
 These are the common pitfalls that you should keep in mind while you are building this prototype
 
-- pitfall-1
-- pitfall-2
-- pitfall-3
+- have a primary key to your tables otherwise the entire table might get locked
+- auto-deletion of keys at scale is tricky, think about it well
 
 # Outcome
 
 ##  You'll learn
 
-- learning 1
-- learning 2
-- learning 3
+- SQL Transactions
+- Database Locking
+- Scaling by sharding
 
 <!--fs-->
 #  Share and shoutout
