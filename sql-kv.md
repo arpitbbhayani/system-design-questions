@@ -2,7 +2,7 @@ Design SQL backed KV Store
 ===
 
 <!--ts-->
-* [Design something awesome](#design-something-awesome)
+* [Design SQL backed KV Store](#design-sql-backed-kv-store)
 * [Problem Statement](#problem-statement)
 * [Requirements](#requirements)
    * [Core Requirements](#core-requirements)
