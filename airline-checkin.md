@@ -2,7 +2,7 @@ Design Airline Check-in System
 ===
 
 <!--ts-->
-* [Design Ticket Booking System](#design-ticket-booking-system)
+* [Design Airline Check-in System](#design-airline-check-in-system)
 * [Problem Statement](#problem-statement)
 * [Requirements](#requirements)
    * [Core Requirements](#core-requirements)
