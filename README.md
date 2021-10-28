@@ -30,7 +30,7 @@ The program will have a blend of _Live Classes happening on Weekends 4 to 6:30 p
 ## Highlights
 
  - The course has been taken up by __200+__ people, spanning __7__ countries.
- - The NPS of the course is __86__.
+ - The NPS of the course is __89__.
  - People from companies like Tesla, Amazon, Microsoft, Google, Yelp, Github, Flipkart, Practo, Grab, PayPal, and many more, have taken up this course.
 
 
