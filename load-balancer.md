@@ -28,11 +28,12 @@ Design a load balancer that acts as a [Reverse Proxy](https://en.wikipedia.org/w
 
 ## Core Requirements
 
- - ability to accept incoming TCP connection and forward it to one of the configured backend server
- - ability to add and remove backend servers at will
- - ability to monitor healthy backend servers
- - ability to have a configurable load balancing strategy
- - ability to measure and monitor load balancer metrics
+ - ability to **accept incoming TCP** connection and forward it to one of the configured backend server
+ - ability to **add** and **remove** backend servers at will
+ - ability to **monitor** healthy backend servers
+ - ability to have a **configurable** load balancing strategy
+ - ability to **measure** and monitor load balancer metrics
+ - should scale to **millions** of concurrent TCP connections
 
 ##  High Level Requirements
 <!--hs-->

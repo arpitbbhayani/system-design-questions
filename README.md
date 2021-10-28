@@ -11,8 +11,8 @@ The repository contains a set of problem statements around Software Architecture
  - [Design Airline Check-in](airline-checkin.md)
  - [Design SQL backed KV Store](sql-kv.md)
  - [Design a Realtime Database](realtime-db.md)
- - [Design Realtime Claps](realtime-claps.md)
  - [Design a Load Balancer](load-balancer.md)
+ - [Design Realtime Claps](realtime-claps.md)
 
 
 # Arpit's System Design Masterclass
