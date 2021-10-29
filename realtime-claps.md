@@ -1,8 +1,8 @@
-Design something awesome
+Design Realtime Claps
 ===
 
 <!--ts-->
-* [Design something awesome](#design-something-awesome)
+* [Design Realtime Claps](#design-realtime-claps)
 * [Problem Statement](#problem-statement)
 * [Requirements](#requirements)
    * [Core Requirements](#core-requirements)
