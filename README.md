@@ -17,6 +17,7 @@ The repository contains a set of problem statements around Software Architecture
  - [Design a HashTag Service](hashtag-service.md)
  - [Design OnePic](onepic.md)
  - [Design Photo Tagging](tagging-photos-with-people.md)
+ - [Design User Affinity](user-affinity.md)
  - [Design Realtime Claps](realtime-claps.md)
 
 
