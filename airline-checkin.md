@@ -29,7 +29,7 @@ In this problem statement, let's design this web-check in system, where the pass
 # Requirements
 
 <!--rs-->
-*The problem statement is something to start with, be creative and dive into product details and add constraints and features you think are important. Be creative, if you want.*
+*The problem statement is something to start with, be creative and dive into the product details and add constraints and features you think would be important.*
 <!--re-->
 
 ## Core Requirements

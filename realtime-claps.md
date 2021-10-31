@@ -30,7 +30,7 @@ Design a realtime gratification system, that updates the _clap_ count as soon as
 # Requirements
 
 <!--rs-->
-*The problem statement is something to start with, be creative and dive into product details and add constraints and features you think are important. Be creative, if you want.*
+*The problem statement is something to start with, be creative and dive into the product details and add constraints and features you think would be important.*
 <!--re-->
 
 ## Core Requirements
