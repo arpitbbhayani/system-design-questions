@@ -13,6 +13,7 @@ The repository contains a set of problem statements around Software Architecture
  - [Design a Realtime Database](realtime-db.md)
  - [Design a Load Balancer](load-balancer.md)
  - [Design Synchronized Queue Consumers](queue-consumers.md)
+ - [Design an Image Service](image-service.md)
  - [Design Realtime Claps](realtime-claps.md)
 
 

@@ -1,0 +1,100 @@
+Design an Image Service
+===
+
+<!--ts-->
+* [Design an Image Service](#design-an-image-service)
+* [Problem Statement](#problem-statement)
+* [Requirements](#requirements)
+   * [Core Requirements](#core-requirements)
+   * [High Level Requirements](#high-level-requirements)
+   * [Micro Requirements](#micro-requirements)
+* [Output](#output)
+   * [Design Document](#design-document)
+   * [Prototype](#prototype)
+      * [Recommended Tech Stack](#recommended-tech-stack)
+      * [Keep in mind](#keep-in-mind)
+* [Outcome](#outcome)
+   * [You'll learn](#youll-learn)
+* [Share and shoutout](#share-and-shoutout)
+<!--te-->
+
+# Problem Statement
+
+Design an image service that takes care of serving images and uploading images. Assume that we do not have to optimize the image in any capacity, and simply take care of upload and serving.
+
+![Relog Image Service](https://user-images.githubusercontent.com/4745789/139569887-2247a841-f78d-4546-a331-ec4d891f453a.png)
+
+# Requirements
+
+## Core Requirements
+
+ - upload **5 million images** every hour from various clients and devices
+ - serving images **efficiently** to the rendering devices
+ - provide **analytics** around how images are requested from the systems
+ - bacndwith consumption should be **near-optimal**
+
+##  High Level Requirements
+<!--hs-->
+- make your high-level components operate with **high availability**
+ - ensure that the data in your system is **durable**, not matter what happens
+ - define how your system would behave while **scaling-up** and **scaling-down**
+ - make your system **cost-effective** and provide a justification for the same
+ - describe how **capacity planning** helped you made a good design decision
+<!--he-->
+
+##  Micro Requirements
+<!--ms-->
+- ensure the data in your system is **never** going in an inconsistent state
+ - ensure your system is **free of deadlocks** (if applicable)
+ - ensure that the throughput of your system is not affected by **locking**, if it does, state how it would affect
+<!--me-->
+
+# Output
+
+## Design Document
+<!--ds-->
+Create a **design document** of this system/feature stating all critical design decisions, tradeoffs, components, services, and communications. Also specify how your system handles at scale, and what will eventually become a chokepoint.
+
+Do **not** create unnecessary components, just to make design look complicated. A good design is **always simple and elegant**. A good way to think about it is if you were to create a spearate process/machine/infra for each component and you will have to code it yourself, would you still do it?
+<!--de-->
+
+## Prototype
+
+To understand the nuances and internals of this system, build a prototype that
+
+- write an image uploader that uploads image and stores it locally on one of your local folders
+- generate a public URL for the image through which the image can be pullged in an `img` tag
+- record metrics everytime an image is requested
+
+###  Recommended Tech Stack
+
+This is a recommended tech-stack for building this prototype
+
+|Which|Options|
+|-----|-----|
+|Language|Golang, Java, C++|
+
+###  Keep in mind
+
+These are the common pitfalls that you should keep in mind while you are building this prototype
+
+- serving image from your custom API server is very simple
+
+# Outcome
+
+##  You'll learn
+
+- serving static files
+- image uploading at scale
+- using CDN to cache a handle load from different geographies
+
+<!--fs-->
+#  Share and shoutout
+
+If you find this assignment helpful, please
+ - share this assignment with your friends and peers
+ - star this repository and help it reach a wider audience
+ - give me a shoutout on Twitter [@arpit_bhayani](https://twitter.com/@arpit_bhayani), or on LinkedIn at [@arpitbhayani](https://www.linkedin.com/in/arpitbhayani/).
+
+This assignment is part of [Arpit's System Design Masterclass](https://arpitbhayani.me/masterclass) - A masterclass that helps you become great at designing scalable, fault-tolerant, and highly available systems.
+<!--fe-->
