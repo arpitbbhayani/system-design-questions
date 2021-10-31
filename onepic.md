@@ -1,4 +1,4 @@
-Design OnePic Service
+Design OnePic
 ===
 
 <!--ts-->

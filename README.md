@@ -15,7 +15,8 @@ The repository contains a set of problem statements around Software Architecture
  - [Design Synchronized Queue Consumers](queue-consumers.md)
  - [Design an Image Service](image-service.md)
  - [Design a HashTag Service](hashtag-service.md)
- - [Design the OnePic service](onepic.md)
+ - [Design OnePic](onepic.md)
+ - [Design Photo Tagging](tagging-photos-with-people.md)
  - [Design Realtime Claps](realtime-claps.md)
 
 
