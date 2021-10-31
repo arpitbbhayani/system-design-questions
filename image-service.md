@@ -20,7 +20,7 @@ Design an Image Service
 
 # Problem Statement
 
-Design an image service that takes care of serving images and uploading images. Assume that we do not have to optimize the image in any capacity, and simply take care of upload and serving.
+Design an image service that takes care of uploading, sering and optimizing images at scale of 5 million image upload every hour. The image optimization will be specific to the device requesting it.
 
 ![Relog Image Service](https://user-images.githubusercontent.com/4745789/139569887-2247a841-f78d-4546-a331-ec4d891f453a.png)
 
