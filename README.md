@@ -18,6 +18,7 @@ The repository contains a set of problem statements around Software Architecture
  - [Design OnePic](onepic.md)
  - [Design Photo Tagging](tagging-photos-with-people.md)
  - [Design User Affinity](user-affinity.md)
+ - [Design Newly Unread Message Indicator](newly-unread-indicator.md)
  - [Design Realtime Claps](realtime-claps.md)
 
 
