@@ -14,6 +14,7 @@ patterns = [
   ('<!--hs-->', '<!--he-->', './scripts/high-level-requirements.md'),
   ('<!--ms-->', '<!--me-->', './scripts/micro-requirements.md'),
   ('<!--ds-->', '<!--de-->', './scripts/dd.md'),
+  ('<!--rs-->', '<!--re-->', './scripts/req.md'),
 ]
 
 for pattern in patterns:

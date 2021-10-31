@@ -26,6 +26,10 @@ Design a modern realtime KV database that sends realtime updates to all the user
 
 # Requirements
 
+<!--rs-->
+*The problem statement is something to start with, be creative and dive into product details and add constraints and features you think are important. Be creative, if you want.*
+<!--re-->
+
 ## Core Requirements
 
  - updates made by one user in one table is broadcasted to all users subscribed to it
@@ -39,7 +43,8 @@ Design a modern realtime KV database that sends realtime updates to all the user
  - ensure that the data in your system is **durable**, not matter what happens
  - define how your system would behave while **scaling-up** and **scaling-down**
  - make your system **cost-effective** and provide a justification for the same
- - describe how **capacity planning** helped you made a good design decision
+ - describe how **capacity planning** helped you made a good design decision 
+ - think about how other services will interact with your service
 <!--he-->
 
 ##  Micro Requirements

@@ -12,6 +12,9 @@ Representative image goes here.
 
 # Requirements
 
+<!--rs-->
+<!--re-->
+
 ## Core Requirements
 
  - core requirement 1

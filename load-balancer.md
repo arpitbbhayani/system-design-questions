@@ -26,6 +26,10 @@ Design a load balancer that acts as a [Reverse Proxy](https://en.wikipedia.org/w
 
 # Requirements
 
+<!--rs-->
+*The problem statement is something to start with, be creative and dive into product details and add constraints and features you think are important. Be creative, if you want.*
+<!--re-->
+
 ## Core Requirements
 
  - ability to **accept incoming TCP** connection and forward it to one of the configured backend server
@@ -41,7 +45,8 @@ Design a load balancer that acts as a [Reverse Proxy](https://en.wikipedia.org/w
  - ensure that the data in your system is **durable**, not matter what happens
  - define how your system would behave while **scaling-up** and **scaling-down**
  - make your system **cost-effective** and provide a justification for the same
- - describe how **capacity planning** helped you made a good design decision
+ - describe how **capacity planning** helped you made a good design decision 
+ - think about how other services will interact with your service
 <!--he-->
 
 ##  Micro Requirements
