@@ -29,6 +29,8 @@ Design a single node cache and then scale it out to be distributed. We keep this
 
 While designing the cache it is very important to note that the cache should be highly available and scalable. Given that cache is a high throughput and highly concurrent system, scaling up and down the cache should not have a major impact on the data or the performance.
 
+![Relog Design a Distributed Cache](https://user-images.githubusercontent.com/4745789/141650924-943da5ba-c3a0-4d86-b3f2-a300be7bea9d.png)
+
 # Requirements
 
 <!--rs-->
@@ -44,6 +46,7 @@ While designing the cache it is very important to note that the cache should be 
  - cache should not pause for peripheral sub-systems like monitoring
  - every component should be fault tolerant
  - pluggable cache eviction and its implication on performance
+ - data is too big to be stored in one node
 
 ##  High Level Requirements
 <!--hs-->
