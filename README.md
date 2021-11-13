@@ -19,6 +19,7 @@ The repository contains a set of problem statements around Software Architecture
  - [Design Photo Tagging](tagging-photos-with-people.md)
  - [Design User Affinity](user-affinity.md)
  - [Design Newly Unread Message Indicator](newly-unread-indicator.md)
+ - [Design a Distributed Cache](distributed-cache.md)
  - [Design Realtime Claps](realtime-claps.md)
 
 
