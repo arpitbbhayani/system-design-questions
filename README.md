@@ -20,6 +20,7 @@ The repository contains a set of problem statements around Software Architecture
  - [Design User Affinity](user-affinity.md)
  - [Design Newly Unread Message Indicator](newly-unread-indicator.md)
  - [Design a Distributed Cache](distributed-cache.md)
+ - [Design a Word Dictionary](word-dictionary.md)
  - [Design Realtime Claps](realtime-claps.md)
 
 
