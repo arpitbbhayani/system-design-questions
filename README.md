@@ -22,6 +22,7 @@ The repository contains a set of problem statements around Software Architecture
  - [Design a Distributed Cache](distributed-cache.md)
  - [Design a Word Dictionary](word-dictionary.md)
  - [Design a Superfast KV Store](superfast-kv.md)
+ - [Design S3](s3.md)
  - [Design Realtime Claps](realtime-claps.md)
 
 
