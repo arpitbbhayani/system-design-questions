@@ -2,7 +2,7 @@ Design a Superfast KV Store
 ===
 
 <!--ts-->
-* [Design SQL backed KV Store](#design-sql-backed-kv-store)
+* [Design a Superfast KV Store](#design-a-superfast-kv-store)
 * [Problem Statement](#problem-statement)
 * [Requirements](#requirements)
    * [Core Requirements](#core-requirements)
@@ -20,7 +20,7 @@ Design a Superfast KV Store
 
 # Problem Statement
 
-Design a single-node persistent KV Store that supports `GET`, `PUT` and `DEL` operations and it utilizes hardware to optimally. The response time for all the 3 operations should be as low as possible and complexity of operations should be `O(1)`.
+Design a single-node persistent KV Store that supports `GET`, `PUT` and `DEL` operations and it utilizes hardware (disk, RAM) optimally. The response time for all the 3 operations should be as low as possible and complexity of operations should be `O(1)`. It is okay for this KV store to not support infinite number of keys given it is bound to a single node.
 
 > Note: It is okay if your storage engine cannot support very large number of keys.
 
@@ -32,9 +32,9 @@ Design a single-node persistent KV Store that supports `GET`, `PUT` and `DEL` op
 
 ## Core Requirements
 
- - should be able to `GET`, `PUT`, `DEL` on keys
+ - should be able to `GET`, `PUT`, `DEL` on a key
  - all operations should happen as fast as possible with complexity of `O(1)`
- - this engine is not distributed and will run on just a single node
+ - this KV store is not distributed and will run on just a single node
 
 ##  High Level Requirements
 <!--hs-->
@@ -80,7 +80,7 @@ This is a recommended tech-stack for building this prototype
 
 These are the common pitfalls that you should keep in mind while you are building this prototype
 
-- your storage engine is will always be bound to single node
+- your storage engine will always be bound to single node
 - it is okay for your engine to not support very large number of keys
 
 # Outcome
