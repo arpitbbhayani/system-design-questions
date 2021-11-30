@@ -24,6 +24,7 @@ The repository contains a set of problem statements around Software Architecture
  - [Design a Superfast KV Store](superfast-kv.md)
  - [Design S3](s3.md)
  - [Design a Faster Superfast KV Store](faster-superfast-kv.md)
+ - [Design a Video Processing Pipeline for Steaming Service](video-pipeline.md)
  - [Design Realtime Claps](realtime-claps.md)
 
 
