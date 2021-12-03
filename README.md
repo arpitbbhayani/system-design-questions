@@ -28,6 +28,7 @@ The repository contains a set of problem statements around Software Architecture
  - [Design a Text-based Search Engine](text-search-engine.md)
  - [Design a service that serves Recent Searches for a user](recent-searches.md)
  - [Design a Text-based Cricket Commentary Service](live-commentary.md)
+ - [Design a SQL backed Message Broker](sql-broker.md)
  - [Design Realtime Claps](realtime-claps.md)
 
 
