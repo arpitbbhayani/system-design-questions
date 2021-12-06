@@ -34,6 +34,8 @@ The flow of the sale to be supported by the system is
  - if user completes the payment within 5 minutes, the XPhone is sold to that user
  - if the payment fails, the XPhone is allowed to be purchased by other users
 
+Note: Flash Sale and Ticket booking systems have the exact same flow; the only thing that varies is the expected througput and scale.
+
 # Requirements
 
 <!--rs-->
