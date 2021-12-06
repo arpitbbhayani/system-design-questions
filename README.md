@@ -32,7 +32,9 @@ The repository contains a set of problem statements around Software Architecture
  - [Design a Distributed Task Scheduler](task-scheduler.md)
  - [Design Flash Sale](flash-sale.md)
  - [Design Realtime Claps](realtime-claps.md)
-
+ - [Design Counting Impressions at Scale](counting-impressions.md)
+ - [Designing a Remote File Sync Service](file-sync.md)
+ - [Designing a "who's near me" Service](near-me.md)
 
 # Arpit's System Design Masterclass
 
