@@ -30,6 +30,7 @@ The repository contains a set of problem statements around Software Architecture
  - [Design a Text-based Cricket Commentary Service](live-commentary.md)
  - [Design a SQL backed Message Broker](sql-broker.md)
  - [Design a Distributed Task Scheduler](task-scheduler.md)
+ - [Design Flash Sale](flash-sale.md)
  - [Design Realtime Claps](realtime-claps.md)
 
 
