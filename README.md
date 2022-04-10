@@ -1,16 +1,16 @@
-System Design Assignments
+System Design Questions
 ===
 
 The repository contains a set of problem statements around Software Architecture and System Design as conducted by [Arpit's System Design Masterclass](https://arpitbhayani.me/masterclass).
 
 
-# Assignments
+# Questions
 
  - [Design a Blogging Platform](blogging-platform.md)
  - [Design Online Offline Indicator](online-offline-indicator.md)
  - [Design Airline Check-in](airline-checkin.md)
  - [Design SQL backed KV Store](sql-kv.md)
- - [Design a Realtime Database](realtime-db.md)
+ - Design Slack's Realtime Communication - NEW
  - [Design a Load Balancer](load-balancer.md)
  - [Design Synchronized Queue Consumers](queue-consumers.md)
  - [Design an Image Service](image-service.md)
@@ -34,6 +34,13 @@ The repository contains a set of problem statements around Software Architecture
  - [Design Counting Impressions at Scale](counting-impressions.md)
  - [Designing a Remote File Sync Service](file-sync.md)
  - [Designing a "who's near me" Service](near-me.md)
+
+---
+
+# Questions that I do not cover anymore
+
+ - [Designing a Realtime DB](realtime-db.md)
+
 
 # Arpit's System Design Masterclass
 
