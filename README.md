@@ -24,7 +24,7 @@ The repository contains a set of problem statements around Software Architecture
  - [Design a Superfast KV Store](superfast-kv.md)
  - [Design S3](s3.md)
  - [Design a Faster Superfast KV Store](faster-superfast-kv.md)
- - [Design a Video Processing Pipeline for Steaming Service](video-pipeline.md)
+ - [Design a Video Processing Pipeline for Streaming Service](video-pipeline.md)
  - [Design a Text-based Search Engine](text-search-engine.md)
  - [Design a service that serves Recent Searches for a user](recent-searches.md)
  - [Design a Text-based Cricket Commentary Service](live-commentary.md)
