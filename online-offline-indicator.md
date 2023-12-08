@@ -35,7 +35,7 @@ In this assignment, let's design a system that indicates who all are online at t
 ## Core Requirements
 
  - should update online status of a user within **10 seconds** of user coming online
- - can be **lineant** in marking a user offline
+ - can be **lenient** in marking a user offline
  - should scale for **5 million** active users at any given moment
  - a user should see accurate status of any other user, **eventually**
 
