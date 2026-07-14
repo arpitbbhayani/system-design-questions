@@ -51,13 +51,6 @@ The repository contains a set of problem statements around Software Architecture
 - You will have lifetime access to the recordings irrespective of which course you choose
 - The course is language agnostic, the prototypes will be in Go, but nothing very Go specific required to get the most out of it.
 
-## Highlights
-
- - The course has been taken up by __200+__ people, spanning __7__ countries.
- - The NPS of the course is __89__.
- - People from companies like Tesla, Amazon, Microsoft, Google, Yelp, Github, Flipkart, Practo, Grab, PayPal, and many more, have taken up this course.
-
-
 ## Hey, I am Arpit
 
 > engineering, databases, and systems. always building.
