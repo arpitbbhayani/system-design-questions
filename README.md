@@ -3,7 +3,6 @@ System Design Questions
 
 The repository contains a set of problem statements around Software Architecture and System Design as conducted by [Arpit's System Design Masterclass](https://arpitbhayani.me/masterclass).
 
-
 # Questions
 
  - [Design a Blogging Platform](blogging-platform.md)
@@ -37,21 +36,20 @@ The repository contains a set of problem statements around Software Architecture
 
 ---
 
-# Questions that I do not cover anymore
-
- - [Designing a Realtime DB](realtime-db.md)
-
-
 # Arpit's System Design Masterclass
 
-> A masterclass that helps you become great at designing _scalable_, _fault-tolerant_, and _highly available_ systems.
+> A no-fluff and highly practical masterclass that reignites engineering curiosity and helps SDE-2, SDE-3, and above become great at designing, implementing, and shipping scalable, fault-tolerant, and highly available systems at the workplace.
 
-## The Program
+## Key Details
 
-This is a prime and intermediate-level cohort-based course aimed at providing an exclusive and crisp learning experience. The program will cover most of the topics under System Design and Software Architecture including but not limited to - _Architecting Social Networks_, _Building Storage Engines_ and, _Designing High Throughput Systems_.
-
-The program will have a blend of _Live Classes happening on Weekends 4 to 6:30 pm IST_, _1:1 Mentorship sessions happening on weekdays_, and _assignments_. The program is designed to be intense and crisp to accelerate learning.
-
+- Every single system will be ideated, brainstormed, and designed practically
+- The design will be how similar systems are actually built in production
+- We will cover key implementation details and prototype every single system discussed
+- Sessions are brainstorming-heavy and we naturally evolve our solution instead of going from question to answer
+- We discuss all possible trade-offs and understand the right intuition for opting a trade-off over another
+- Sessions go on for a minimum 3 hours and do not end until every single question is answered
+- You will have lifetime access to the recordings irrespective of which course you choose
+- The course is language agnostic, the prototypes will be in Go, but nothing very Go specific required to get the most out of it.
 
 ## Highlights
 
@@ -60,22 +58,18 @@ The program will have a blend of _Live Classes happening on Weekends 4 to 6:30 p
  - People from companies like Tesla, Amazon, Microsoft, Google, Yelp, Github, Flipkart, Practo, Grab, PayPal, and many more, have taken up this course.
 
 
-## Hi, I'm Arpit Bhayani 👋
+## Hey, I am Arpit
 
-<img width="256px" src="https://arpitbhayani.me/static/img/arpit.jpg" />
+> engineering, databases, and systems. always building.
 
-In my last **~9** years of experience, I have worked at **D. E. Shaw**, **Practo**, **Amazon**, and **Unacademy**; and have built systems, services, and platforms that scaled to billions.
+I am a software engineer and engineering leader passionate about applied AI and databases. Currently, I am a Principal Engineer II at [Razorpay](https://razorpay.com/), working at the intersection of Data and AI, where I am building Agent Studio, which enables merchants to create AI agents while we provide the infrastructure and harness to run them reliably. I am also working on the Customer Data Platform and leading Merchant Developer Experience.
 
-Post my masters in CSE from **IIIT Hyderabad** I joined D. E. Shaw for a short stint of 2 months, before moving to Practo and working there as a **Platform Engineer**, building and owning close to 8 different microservices. Post Practo I worked at Amazon on their primary mission-critical E-Commerce Database and built **Data Pipelines** that cold tiered the stale data.
+I am also building [px0.ai](https://px0.ai/), an open-source prompt infrastructure toolkit that lets you version, update, and govern prompts in production, eliminating the need to hardcode prompts or redeploy your application for prompt changes.
 
-After quitting Amazon in 2018, I joined Unacademy as their first **Technical Architect** and there I designed, built, managed, and scaled services like _Search_, _Notification_, _Logging_, _Deployment Engine_, and many more. I have now transitioned into the role of a Sr. Engineering Manager, leading the Site Reliability vertical.
+Previously, I was a Staff Engineer at Google, where I worked on [GCP Memorystore](https://cloud.google.com/memorystore) and [GCP Dataproc](https://cloud.google.com/dataproc). On the side, I am building - [DiceDB](https://github.com/dicedb/dice), a fork of Valkey with [multi-tiering](https://dicedb.io/docs/features/tiering) and [query subscriptions](https://dicedb.io/docs/features/query-subscriptions). I also spend time on independent research, publishing [my work on ArXiv](https://arxiv.org/search/cs?searchtype=author&query=Bhayani,+A). My areas of interest include databases, approximate algorithms, and distributed systems.
 
-In January 2020, I started my [newsletter](https://arpitbhayani.me/newsletter) where I write and share an essay about programming languages internals, deep dives on some super-clever algorithms, and few tips on building scalable distributed systems. The newsletter currently has close to **2000+** subscribers.
+In 2024, I took a leap of faith and co-founded [Profile.fyi](https://profile.fyi/), which was later acquired by Mercor. I was part of [Amazon's](https://www.amazon.com/) Fast Data Team, where I worked on cold tiering of hot data and developed a seamless query interface across all storage tiers.
 
-Recently, I have started building [Revine](https://revine.arpitbhayani.me) - a programming langauge for kids helping them develop logic through **animations** and spark their creativity through **artwork**.
+I held engineering leadership positions (both IC and management) at [Unacademy](https://unacademy.com/), where I built, grew, and led Search, Site Reliability Engineering (SRE) teams, and Data Engineering teams. I hold a total of 12+ years of experience in scaling backend services, taking products and teams from 0 to 1, and beyond.
 
-<center>
-<a target="_blank" href="https://arpitbhayani.me/masterclass">
-<img src="https://user-images.githubusercontent.com/4745789/137859181-d4499cf4-ce65-4466-8b88-a078ece0f081.PNG" width="300px" />
-</a>
-</center>
+I keep diving deep into engineering details and share my learnings through [166+ blogs](https://arpitbhayani.me/blogs), [socials](https://twitter.com/arpit_bhayani) and, [250+ no-fluff engineering videos on YouTube](https://youtube.com/c/ArpitBhayani), breaking down System Design, Database Internals, Microservices, BitTorrent Internals, Redis Internals, Research Papers, and the trade-offs behind real-world production systems.
